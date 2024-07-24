@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up-Form</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .container{
+            border: 1px solid ;
+            height: 590px;
+            width: 600px;
+            border-radius: 50px;
+        }
+
+        [type]{
+            border: 2px solid red;
+        }
+
+        [type="radio"]{
+            width: 50px;
+            
+        }
+
+        [type~="mail"]{
+            background-color: yellowgreen;
+            width: 250px;
+        }
+        
+        input[type |="pass"]{
+            width: 100px;
+            background-color: aqua;
+        }
+
+        [type ^="tel"]{
+            background-color: pink;
+        }
+
+        [type $="it"]{
+            background-color: red;
+        }
+
+        [name *="an"]{
+            background-color: green;
+        }
+    </style>
+</head>
+<body bgcolor="violet">
+    <center><h1><font color="red">Sign Up Form</font></h1>
+        <div class="container"><br>
+            <form>
+                <label for="FName">First Name : </label>
+                <input type="text" id="FName" name="FName"/><br><br>
+                <label for="LName">Last Name : </label>
+                <input type="text" id="LName" name="LName"/><br><br>
+                <p>Choose Gender : </p>
+                <input type="radio" id="Gender" name="Gender"/>
+                <label for="Gender">Male</label>
+                <input type="radio" id="Gender" name="Gender"/>
+                <label for="Gender">Female</label><br><br>
+                <label for="E-Mail">E-Mail-ID : </label>
+                <input type="mail" id="E-Mail" name="E-Mail"/><br><br>
+                <label for="Mobile No">Mobile Number : </label>
+                <input type="tel" id="Mobile No" name="Mobile No" pattern="[0-9]{10}"/><br><br>
+                <label for="password">Password : </label>
+                <input type="pass-word" id="password" name="Password" pattern="[0-9]{6}"/><br><br>
+                <p>Choose State : </p>
+                <input type="checkbox" id="state" name="State" value="Andhra_Pradesh"/>
+                <label for="state">Andhra Pradesh</label><br>
+                <input type="checkbox" id="state" name="State" value="Telangana"/>
+                <label for="state">Telangana</label><br>
+                <input type="checkbox" id="state" name="State" value="Mumbai"/>
+                <label for="state">Mumbai</label><br>
+                <input type="checkbox" id="state" name="Chennai"/>
+                <label for="state">Chennai</label><br>
+                <input type="checkbox" id="state" name="Bangalore"/>
+                <label for="state">Bangalore</label><br><br>
+                <label for="branch">Choose Branch : </label>
+                <select name="Branch" id="branch">
+                    <option value="Civil">Civil</option>
+                    <option value="E.C.E">E.C.E</option>
+                    <option value="C.S.E">C.S.E</option>
+                    <option value="E.E.E">E.E.E</option>
+                    <option value="Mechanical">Mechanical</option>
+                </select><br><br>
+                <p>For Any Queries : <a href="https://www.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a></p>
+                <input type="Reset"/>
+                <input type="Submit">
+            </form>
+        </div>
+    </center>
+</body>
+</html>
